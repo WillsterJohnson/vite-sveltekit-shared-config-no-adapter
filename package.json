@@ -1,0 +1,16 @@
+{
+  "name": "vite-mono-config",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "toggle": "node ./toggle.js",
+    "demo": "pnpm -C apps/appname sync && pnpm -C apps/appname build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.3"
+  }
+}
