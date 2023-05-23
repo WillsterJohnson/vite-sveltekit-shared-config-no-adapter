@@ -22,6 +22,8 @@ To attempt to build the app, run `pnpm run demo`.
 
 Never blindly copy-paste commands into your terminal. Read the following script to be sure you're happy to run it.
 
+IMPORTANT: run `node -v` first, make sure you're using v16 or v18!
+
 ```bash
 # cd to somewhere safe. This command will create a subdirectory, clone this repo, enter it, and run some stuff.
 git clone git@github.com:willsterjohnson/vite-sveltekit-shared-config-no-adapter.git ./vite-sveltekit-shared-config-no-adapter && \
@@ -44,11 +46,13 @@ cp ./apps/appname/vite.config.ts ./outputs/shared-config__vite.config.ts && \
 # toggle to working build - using local config (in case you wish to re-run this script)
 pnpm run toggle && \
 # STOP! do you have VSCode installed?
-code . ./README.md ./outputs/local-config__build-output.log ./outputs/shared-config__build-output.log ./outputs/local-config__vite.config.ts ./outputs/shared-config__vite.config.ts
+code --diff ./outputs/local-config__build-output.log ./outputs/shared-config__build-output.log && \
+code --diff ./outputs/local-config__vite.config.ts ./outputs/shared-config__vite.config.ts && \
+code . ./README.md
 ```
 
 > "one-liner"
-That was 14 lines, 22 if you count comments.
+That was 16 lines, 24 if you count comments.
 
 ## What's the Issue?
 
