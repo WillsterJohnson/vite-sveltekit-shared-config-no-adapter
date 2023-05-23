@@ -44,7 +44,7 @@ cp ./apps/appname/vite.config.ts ./outputs/shared-config__vite.config.ts && \
 # toggle to working build - using local config (in case you wish to re-run this script)
 pnpm run toggle && \
 # STOP! do you have VSCode installed?
-code . ./outputs/local-config__build-output.log ./outputs/shared-config__build-output.log ./outputs/local-config__vite.config.ts ./outputs/shared-config__vite.config.ts
+code . ./README.md ./outputs/local-config__build-output.log ./outputs/shared-config__build-output.log ./outputs/local-config__vite.config.ts ./outputs/shared-config__vite.config.ts
 ```
 
 > "one-liner"
